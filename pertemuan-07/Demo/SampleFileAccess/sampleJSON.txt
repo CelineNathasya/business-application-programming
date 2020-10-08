@@ -1,0 +1,42 @@
+[
+  {
+    "Nim": "201110001",
+    "Nama": "Syamsul",
+    "TempatLahir": "Medan",
+    "TanggalLahir": "2001-10-10T00:00:00",
+    "WaktuKuliah": "Pagi",
+    "Kelas": "A"
+  },
+  {
+    "Nim": "201110002",
+    "Nama": "David",
+    "TempatLahir": "Medan",
+    "TanggalLahir": "2001-10-11T00:00:00",
+    "WaktuKuliah": "Pagi",
+    "Kelas": "A"
+  },
+  {
+    "Nim": "201110003",
+    "Nama": "Tina",
+    "TempatLahir": "Medan",
+    "TanggalLahir": "2001-10-12T00:00:00",
+    "WaktuKuliah": "Pagi",
+    "Kelas": "A"
+  },
+  {
+    "Nim": "201110004",
+    "Nama": "Carin",
+    "TempatLahir": "Medan",
+    "TanggalLahir": "2001-10-13T00:00:00",
+    "WaktuKuliah": "Pagi",
+    "Kelas": "A"
+  },
+  {
+    "Nim": "201110005",
+    "Nama": "Sean",
+    "TempatLahir": "Medan",
+    "TanggalLahir": "2001-10-14T00:00:00",
+    "WaktuKuliah": "Pagi",
+    "Kelas": "A"
+  }
+]

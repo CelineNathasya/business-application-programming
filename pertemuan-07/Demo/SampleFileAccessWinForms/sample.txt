@@ -1,0 +1,11 @@
+Nim;Nama;TempatLahir;TanggalLahir;WaktuKuliah;Kelas
+081110001;Budiman;Medan;10/02/2001;Sore;A
+081110002;Susan;Binjai;12/12/2000;Sore;A
+081110003;Iwan;Tebing Tinggi;30/09/2002;Sore;A
+081110004;Budi;Medan;25/07/2001;Sore;A
+081110005;Katlyn;Ranto Prapat;07/02/2001;Sore;A
+081110006;Jessica;Medan;15/05/2001;Pagi;A
+081110007;Mini;Kisaran;10/03/2001;Pagi;A
+081110008;Gunawan;Pematang Siantar;11/01/2001;Pagi;A
+081110009;Robert;Medan;01/01/2001;Pagi;A
+081110010;Susi;Tanjung Balai;10/10/2001;Pagi;A
