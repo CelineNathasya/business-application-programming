@@ -6,6 +6,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// step by step working with database dengan cara ADO.NET DataSet (Disconnected Approach)
+// 1. connect to db [memerlukan connectionstring, berupa string,
+//    bisa dideploy dengan helper dari object connectionstringbuilder]
+// 2. create dataadapter object,
+// 3. create commandbuilder object,
+// 4. create dataset object,
+// 5. fill data dan dataschema ke dataset berdasarkan data di DBMS via dataadapter object
+// 6. working with dataset (insert, select, update, delete)
+// 7. update perubahan pada dataset ke DBMS via dataadapter object dengan memanggil method update
+// 8. close connection
+
 namespace ConsoleApp1
 {
    public class Program6
