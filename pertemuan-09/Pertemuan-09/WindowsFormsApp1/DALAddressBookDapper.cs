@@ -101,8 +101,7 @@ namespace WindowsFormsApp1
          try
          {
             trans = conn.BeginTransaction();
-            conn.Execute(@"update addressbook set nama = @nama, alamat = @alamat, kota = @kota, kodepos = @kodepos, nomorhp = @nomorhp, 
-                           keterangan = @keterangan, picture = @picture, updateddate = @updateddate where no = @no",
+            conn.Execute(@"update addressbook set deleted = 1 where no = @no",
                            new { no }, transaction: trans);
             trans.Commit();
             result = true;
