@@ -34,6 +34,20 @@ namespace KomunikasiAntarFormWinFormSampleApp
          InitializeComponent();
       }
 
+      public FrmTambahData(Mahasiswa itemData)
+      {
+         InitializeComponent();
+         this.txtNim.Text = itemData.Nim;
+         this.txtNama.Text = itemData.Nama;
+      }
+
+      public FrmTambahData(string nim, string nama)
+      {
+         InitializeComponent();
+         this.txtNim.Text = nim;
+         this.txtNama.Text = nama;
+      }
+
       private void txtNim_KeyDown(object sender, KeyEventArgs e)
       {
          if (e.KeyCode == Keys.Enter) SendKeys.Send("{tab}");

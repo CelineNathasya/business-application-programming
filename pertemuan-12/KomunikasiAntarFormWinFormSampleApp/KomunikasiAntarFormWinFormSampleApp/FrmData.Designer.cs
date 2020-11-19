@@ -32,13 +32,13 @@ namespace KomunikasiAntarFormWinFormSampleApp
          this.components = new System.ComponentModel.Container();
          System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
          this.dgvData = new System.Windows.Forms.DataGridView();
-         this.btnTambahAndReturnObject = new System.Windows.Forms.Button();
-         this.lblBanyakRecordData = new System.Windows.Forms.Label();
          this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-         this.btnTambahAndReturnTuple = new System.Windows.Forms.Button();
          this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
          this.hapusItemDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.btnTambahAndReturnObject = new System.Windows.Forms.Button();
+         this.lblBanyakRecordData = new System.Windows.Forms.Label();
+         this.btnTambahAndReturnTuple = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
          this.contextMenuStrip1.SuspendLayout();
          this.SuspendLayout();
@@ -63,8 +63,37 @@ namespace KomunikasiAntarFormWinFormSampleApp
          this.dgvData.ReadOnly = true;
          this.dgvData.Size = new System.Drawing.Size(560, 425);
          this.dgvData.TabIndex = 0;
+         this.dgvData.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellDoubleClick);
          this.dgvData.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvData_RowsAdded);
          this.dgvData.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvData_RowsRemoved);
+         // 
+         // Column1
+         // 
+         this.Column1.HeaderText = "Nim";
+         this.Column1.Name = "Column1";
+         this.Column1.ReadOnly = true;
+         this.Column1.Width = 200;
+         // 
+         // Column2
+         // 
+         this.Column2.HeaderText = "Nama";
+         this.Column2.Name = "Column2";
+         this.Column2.ReadOnly = true;
+         this.Column2.Width = 250;
+         // 
+         // contextMenuStrip1
+         // 
+         this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hapusItemDataToolStripMenuItem});
+         this.contextMenuStrip1.Name = "contextMenuStrip1";
+         this.contextMenuStrip1.Size = new System.Drawing.Size(163, 26);
+         // 
+         // hapusItemDataToolStripMenuItem
+         // 
+         this.hapusItemDataToolStripMenuItem.Name = "hapusItemDataToolStripMenuItem";
+         this.hapusItemDataToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+         this.hapusItemDataToolStripMenuItem.Text = "Hapus Item Data";
+         this.hapusItemDataToolStripMenuItem.Click += new System.EventHandler(this.hapusItemDataToolStripMenuItem_Click);
          // 
          // btnTambahAndReturnObject
          // 
@@ -85,20 +114,6 @@ namespace KomunikasiAntarFormWinFormSampleApp
          this.lblBanyakRecordData.Text = "{ banyak record data }";
          this.lblBanyakRecordData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
          // 
-         // Column1
-         // 
-         this.Column1.HeaderText = "Nim";
-         this.Column1.Name = "Column1";
-         this.Column1.ReadOnly = true;
-         this.Column1.Width = 200;
-         // 
-         // Column2
-         // 
-         this.Column2.HeaderText = "Nama";
-         this.Column2.Name = "Column2";
-         this.Column2.ReadOnly = true;
-         this.Column2.Width = 250;
-         // 
          // btnTambahAndReturnTuple
          // 
          this.btnTambahAndReturnTuple.Location = new System.Drawing.Point(164, 12);
@@ -108,20 +123,6 @@ namespace KomunikasiAntarFormWinFormSampleApp
          this.btnTambahAndReturnTuple.Text = "Tambah And Return Tuple";
          this.btnTambahAndReturnTuple.UseVisualStyleBackColor = true;
          this.btnTambahAndReturnTuple.Click += new System.EventHandler(this.btnTambahAndReturnTuple_Click);
-         // 
-         // contextMenuStrip1
-         // 
-         this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hapusItemDataToolStripMenuItem});
-         this.contextMenuStrip1.Name = "contextMenuStrip1";
-         this.contextMenuStrip1.Size = new System.Drawing.Size(163, 26);
-         // 
-         // hapusItemDataToolStripMenuItem
-         // 
-         this.hapusItemDataToolStripMenuItem.Name = "hapusItemDataToolStripMenuItem";
-         this.hapusItemDataToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-         this.hapusItemDataToolStripMenuItem.Text = "Hapus Item Data";
-         this.hapusItemDataToolStripMenuItem.Click += new System.EventHandler(this.hapusItemDataToolStripMenuItem_Click);
          // 
          // FrmData
          // 

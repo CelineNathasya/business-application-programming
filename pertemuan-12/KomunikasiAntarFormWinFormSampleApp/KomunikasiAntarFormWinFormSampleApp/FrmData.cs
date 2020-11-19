@@ -53,7 +53,6 @@ namespace KomunikasiAntarFormWinFormSampleApp
                var row = this.dgvData.CurrentRow;
                this.dgvData.Rows.Remove(row);
             }
-
          }
       }
 
@@ -61,5 +60,24 @@ namespace KomunikasiAntarFormWinFormSampleApp
       {
          this.lblBanyakRecordData.Text = $"{this.dgvData.Rows.Count:n0} Record Data.";
       }
+
+      private void dgvData_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+      {
+         if (this.dgvData.CurrentRow != null)
+         {
+            var row = this.dgvData.CurrentRow;
+            string nim = row.Cells[0].Value.ToString().Trim();
+            string nama = row.Cells[1].Value.ToString().Trim();
+            //FrmTambahData form = new FrmTambahData(nim, nama);
+            FrmTambahData form = new FrmTambahData(new Mahasiswa { Nim = nim, Nama = nama });
+            var returnValue = form.RunAndReturnObjectMahasiswa(form);
+            if (returnValue != null)
+            {
+               row.Cells[0].Value = returnValue.Nim;
+               row.Cells[1].Value = returnValue.Nama;
+            }
+         }
+      }
+
    }
 }
